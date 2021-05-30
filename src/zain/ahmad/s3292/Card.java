@@ -32,6 +32,9 @@ public class Card {
     public void setSuit(String suit) {
         this.suit = suit;
     }
+    public void setValue(int num){
+        this.value = num;
+    }
    
    
     
