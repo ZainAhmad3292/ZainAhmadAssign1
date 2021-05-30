@@ -67,6 +67,7 @@ public class CardTrick {
         
         
         //////////Finding the Lucky Card////////////////
+       /*
         for (int i = 0; i < magicHand.length; i++) {
 
             if (luckyCard.getSuit().equals(magicHand[i].getSuit()) && luckyCard.getValue() == magicHand[i].getValue()) {
@@ -74,7 +75,9 @@ public class CardTrick {
             }
         }
         if(luckyCardFound){System.out.println("The lucky card matches!");}
-        else{System.out.println("The lucky card does not match");}
+        else{System.out.println("The lucky card does not match");} 
+        
+        */
 
         // Then report the result here
         
