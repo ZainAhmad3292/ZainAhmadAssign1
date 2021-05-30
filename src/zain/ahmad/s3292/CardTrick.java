@@ -18,8 +18,8 @@ public class CardTrick {
         Scanner sc = new Scanner(System.in);
         boolean cardFound = false;
         Card[] magicHand = new Card[7];
-        
-        //luckycard creation
+
+        // luckycard creation
         Card luckyCard = new Card();
         luckyCard.setValue(4);
         luckyCard.setSuit("Spades");
@@ -29,18 +29,11 @@ public class CardTrick {
             Card c = new Card();
             c.setValue(randomNum(0, 12));
             c.setSuit(Card.SUITS[randomNum(0, 3)]);
-
-
-            //FOR TESTING PURPOSES
-            //System.out.println(c.getValue() + " " + c.getSuit());
-            //END
-
-
-
-
-
-
             magicHand[i] = c;
+
+            // FOR TESTING PURPOSES
+            // System.out.println(c.getValue() + " " + c.getSuit());
+            // END
         }
 
         // insert code to ask the user for Card value and suit, create their card
@@ -50,7 +43,7 @@ public class CardTrick {
 
         System.out.println("Enter the card name");
         String Cardname = sc.next();
-       
+
         for (int i = 0; i < magicHand.length; i++) {
 
             if (Cardname.equals(magicHand[i].getSuit()) && Cardvalue == magicHand[i].getValue()) {
@@ -59,29 +52,31 @@ public class CardTrick {
             }
         }
 
-        if(cardFound){System.out.println("The card matches!");}
-        else{System.out.println("The card does not match");}
-        
+        if (cardFound) {
+            System.out.println("The card matches!");
+        } else {
+            System.out.println("The card does not match");
+        }
+
         // and search magicHand here
-        //Then report the result here
-        
-        
-        //////////Finding the Lucky Card////////////////
-       /*
-        for (int i = 0; i < magicHand.length; i++) {
+        // Then report the result here
+
+        ////////// Finding the Lucky Card////////////////
+
+       /*  for (int i = 0; i < magicHand.length; i++) {
 
             if (luckyCard.getSuit().equals(magicHand[i].getSuit()) && luckyCard.getValue() == magicHand[i].getValue()) {
                 luckyCardFound = true;
             }
         }
-        if(luckyCardFound){System.out.println("The lucky card matches!");}
-        else{System.out.println("The lucky card does not match");} 
-        
-        */
+        if (luckyCardFound) {
+            System.out.println("The lucky card matches!");
+        } else {
+            System.out.println("The lucky card does not match");
+        } */
 
         // Then report the result here
-        
-        
+
     }
 
     public static int randomNum(int low, int high) {
