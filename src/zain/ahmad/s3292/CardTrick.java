@@ -17,6 +17,11 @@ public class CardTrick {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Card[] magicHand = new Card[7];
+        
+        //luckycard creation
+        Card luckyCard = new Card();
+        luckyCard.setValue(4);
+        luckyCard.setSuit("Spades");
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
@@ -43,6 +48,21 @@ public class CardTrick {
         System.out.println("The card does not match");
         // and search magicHand here
         //Then report the result here
+        
+        
+        //////////Finding the Lucky Card////////////////
+        //for (int i = 0; i < magicHand.length; i++) {
+
+        //    if (luckyCard.getSuit() == magicHand[i].getSuit() && luckyCard.getValue() == magicHand[i].getValue()) {
+        //        System.out.println("The lucky card matches");
+        //        i = 7;
+        //    }
+        //}
+        //System.out.println("The lucky card does not match");
+
+        // Then report the result here
+        
+        
     }
 
     public static int randomNum(int low, int high) {
